@@ -17,7 +17,6 @@ dist/
 
 # IDE files
 .idea/
-.vscode/
 *.sublime-project
 *.sublime-workspace
 

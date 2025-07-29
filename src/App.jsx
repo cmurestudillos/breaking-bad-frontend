@@ -10,7 +10,7 @@ function App() {
 
   // Obtener datos de la API
   const consultarAPI = async () => {
-    const api = await fetch('https://breakingbad-service-dot-backend-services-api.ew.r.appspot.com/v1/quotes');
+    const api = await fetch('https://breaking-bad-backend.vercel.app/v1/quotes');
     const frase = await api.json()
     guardarFrase(frase[0]);
   }
