@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 // UI
 import Contenedor from './components/ui/Contenedor';
 import Boton from './components/ui/Boton';
@@ -11,12 +11,12 @@ function App() {
   // Obtener datos de la API
   const consultarAPI = async () => {
     const api = await fetch('https://breaking-bad-backend.vercel.app/v1/quotes');
-    const frase = await api.json()
+    const frase = await api.json();
     guardarFrase(frase[0]);
-  }
+  };
 
-  useEffect( () => {
-    consultarAPI()
+  useEffect(() => {
+    consultarAPI();
   }, []);
 
   return (
@@ -24,7 +24,7 @@ function App() {
       <Frase frase={frase} />
       <Boton onClick={consultarAPI}> Obtener Frase </Boton>
     </Contenedor>
-  )
+  );
 }
 
-export default App
+export default App;

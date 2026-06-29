@@ -6,6 +6,6 @@ const Contenedor = styled.div`
   align-items: center;
   padding-top: 5rem;
   flex-direction: column;
-` ;
+`;
 
 export default Contenedor;
